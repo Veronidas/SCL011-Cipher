@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Play:400,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HOME -->
+  <div class="whole">
+    <!-- home -->
+    <div id="home" class="container">
+      <h1>¡Bienvenido entusiasta de la encriptación!</h1>
+      <p>
+        Aqui podras aprender un poco más sobre codificación de información
+        ¡O incluso codificar tu propio código!
+      </p>
+      <hr />
+
+      <!-- ¡ENCRIPTA TU CODIGO! -->
+      <section class="encode" id="encoding">
+        <div class="container">
+          <h1>¡Encripta tu Código!</h1>
+          <form id="form1">
+            <div>
+              <!-- <output id="result" for="text result"></output> -->
+              <textarea id="decodeText" type="text" rows="10" cols="40" placeholder="Ingresa aqui el texto a codificar"
+                required></textarea>
+              <!-- </output> -->
+            </div>
+
+            <div>
+              <input type="number" id="shift" rows="2" cols="5" required />
+            </div>
+            <div>
+              <input type="submit" id="encode" value="codificar" />
+              <input type="submit" id="decode" value="decodificar" />
+            </div>
+            <div>
+              <!-- <output id="result" for="text result"></output> -->
+              <div class="msg-style display_block">
+                <p> Su nuevo mensaje es: </p>
+                <h1 id="result">
+                  </h1id="result">
+              </div>
+              <!-- <button onclick="location.reload ();" class="breload"> Limpiar</button> -->
+              <!-- </output> -->
+          </form>
+        </div>
+      </section>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+  </div>
+</body>
+
 </html>
