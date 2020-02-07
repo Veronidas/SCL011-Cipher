@@ -1,1 +1,98 @@
-/* Acá va tu código */
+body {
+  /* background-color: #DDDDD9; */
+  background: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Play";
+}
+
+.whole {
+  max-width: 1000px;
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid darkcyan;
+  padding: 20px;
+}
+
+/* navbar */
+
+.header {
+  padding-bottom: 20px;
+  display: block;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav li {
+  display: inline;
+  padding: 0;
+}
+
+.nav li a {
+  font-size: 16px;
+  text-decoration: none;
+  float: left;
+  padding: 0px 50px;
+  color: #ffffff;
+  border-bottom: 1px;
+  border-bottom-color: #333333;
+  border-bottom-style: solid;
+}
+
+.nav li a:hover {
+  background-color: gray;
+  padding: 0px 50px;
+  border-bottom: 2px;
+  margin: -1px;
+}
+
+/* estilos */
+
+.topart {
+  border-left: 5px solid darkcyan;
+  padding-left: 5px;
+}
+
+h1 {
+  font-size: 30px;
+  color: darkcyan;
+  border: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+hr {
+  margin: 20px;
+  height: 1px;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(17, 226, 209, 0.377),
+    rgba(30, 207, 230, 0.904),
+    rgba(17, 226, 209, 0.377)
+  );
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  display: inline-block;
+}
+
+footer {
+  color: white;
+  background-color: #333333;
+  display: inline-block;
+  height: 60px;
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+}
